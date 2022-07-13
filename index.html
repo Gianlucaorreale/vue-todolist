@@ -13,7 +13,7 @@
         <header class="my-2"></header>
         <main class="w-50 mx-auto">
             <ul class="list-group my-3">
-                <li v-for="task in tasks" class="list-group-item"> {{task.text}} </li>
+                <li v-for="(task, i) in tasks" class="list-group-item d-flex justify-content-between"> {{task.text}} <button type="button" class="btn-close" @click="deleteTask(i)"></button></li>
                 
             </ul>
         </main>
