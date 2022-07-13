@@ -9,6 +9,15 @@
   <title>Vue-todolist</title>
 </head>
 <body>
+    <div id="root">
+        <header class="my-2"></header>
+        <main class="w-50 mx-auto">
+            <ul class="list-group my-3">
+                <li v-for="task in tasks" class="list-group-item"> {{task.text}} </li>
+                
+            </ul>
+        </main>
+    </div>
 
 
 <script src="js/script.js"></script>
