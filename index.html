@@ -14,7 +14,7 @@
         <main class="w-50 mx-auto">
             <div class="input-group mb-3">
                 <input v-model="newTask" type="text" class="form-control" placeholder="aggiungi task">
-                <button class="btn btn-success" @click="">Aggiungi</button>
+                <button class="btn btn-success" @click="addTask">Aggiungi</button>
             </div>
             <h3 v-if="tasks.length===0" class="text-center my-5">Non ci sono cose da fare</h3>
             <ul v-else class="list-group my-3">
